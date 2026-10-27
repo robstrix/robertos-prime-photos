@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Session | Roberto's Prime Photos</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <div class="logo">Roberto's <span>Prime Photos</span></div>
+  <button class="menu-btn">☰</button>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="services.html">Services & Pricing</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="book.html" class="nav-cta">Book a Session</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section>
+  <h1 class="section-title">Book a Session</h1>
+  <p class="section-sub">Share a few details and I’ll reply within 1–2 business days.</p>
+
+  <div class="form-wrap">
+    <form id="form">
+      <div class="form-group">
+        <label>Desired Service *</label>
+        <select id="service" required>
+          <option value="">Select a service</option>
+          <option value="family">Outdoor Family Portraits</option>
+          <option value="seasonal">Seasonal / Holiday Portraits</option>
+          <option value="bridal">Bridal Portraits</option>
+          <option value="engagement">Engagement Photography</option>
+          <option value="wedding">Wedding Photography</option>
+          <option value="graduation">Graduation / Senior Portraits</option>
+          <option value="quince">Quinceañera Photography</option>
+          <option value="birthday">Birthday Photography</option>
+        </select>
+      </div>
+      <div class="form-group"><label>Full Name *</label><input type="text" required></div>
+      <div class="form-group"><label>Email *</label><input type="email" required></div>
+      <div class="form-group"><label>Phone</label><input type="tel"></div>
+      <div class="form-group"><label>Preferred Date(s)</label><input type="text" placeholder="e.g. June 15 or flexible"></div>
+      <div class="form-group"><label>Location / City</label><input type="text"></div>
+      <div class="form-group"><label>Number of People</label><input type="number" min="1"></div>
+      <div class="form-group">
+        <label>Budget Range</label>
+        <select>
+          <option value="">Select range</option>
+          <option>$300–$500</option>
+          <option>$500–$1,000</option>
+          <option>$1,000–$2,500</option>
+          <option>$2,500–$4,000</option>
+          <option>$4,000+</option>
+        </select>
+      </div>
+
+      <div id="wedding" class="conditional">
+        <div class="form-group"><label>Ceremony Venue</label><input type="text"></div>
+        <div class="form-group"><label>Reception Venue</label><input type="text"></div>
+        <div class="form-group"><label>Estimated Guests</label><input type="number"></div>
+      </div>
+      <div id="family" class="conditional">
+        <div class="form-group"><label>Ages of Children</label><input type="text" placeholder="e.g. 2, 5, 8"></div>
+        <div class="form-group"><label>Preferred Style / Location</label><input type="text"></div>
+      </div>
+      <div id="grad" class="conditional">
+        <div class="form-group"><label>School / Campus</label><input type="text"></div>
+        <div class="form-group"><label>Outfit Changes?</label><input type="text"></div>
+      </div>
+      <div id="event" class="conditional">
+        <div class="form-group"><label>Event Venue</label><input type="text"></div>
+        <div class="form-group"><label>Hours Needed</label><input type="text"></div>
+      </div>
+
+      <div class="form-group"><label>Additional Requests</label><textarea rows="4"></textarea></div>
+      <button type="submit" class="btn">Submit Inquiry</button>
+    </form>
+
+    <div class="side">
+      <h3>Get in Touch</h3>
+      <p style="margin:1rem 0;"><strong>Phone:</strong> 650.384.1078</p>
+      <p><strong>Service Area:</strong> Central Valley, Sacramento & Bay Area</p>
+      <p style="margin:1rem 0;"><strong>Response:</strong> 1–2 business days</p>
+      <p><strong>Language:</strong> English & Spanish</p>
+      <p style="margin-top:1.5rem; font-size:0.95rem;">Prefer to talk first? Call or text anytime.</p>
+    </div>
+  </div>
+</section>
+
+<footer><div class="copyright">© 2026 Roberto Perez Jr.</div></footer>
+<script src="script.js"></script>
+</body>
+</html>
